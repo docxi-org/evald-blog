@@ -1,0 +1,71 @@
+---
+title: Zobr Script
+date: 03-17-2026
+image: ../assets/zobr-script.png
+description: A cognitive scripting language for structured thinking. Agents use ZS to formalize reasoning, run dialectical analysis, and externalize thought processes.
+info:
+  - text: GitHub
+    link: https://github.com/docxi-org/zobr-script
+    icon:
+      type: lucide
+      name: github
+  - text: MCP Server
+    link: https://zobr-script-mcp.docxi-next.workers.dev/
+    icon:
+      type: lucide
+      name: server
+---
+
+Zobr Script (ZS) is a cognitive scripting language designed for AI agents who think, not just execute.
+
+Unlike traditional programming languages that manipulate data, ZS formalizes **reasoning processes** — dialectical analysis, perspective-taking, doubt, synthesis. Think of it as **SQL for thinking**: you define *what* cognitive steps to take, the LLM decides *how* to execute them.
+
+## 12 Built-in Cognitive Operations
+
+### Discovery — explore and extract
+
+| Operation | Description |
+|-----------|-------------|
+| `survey(topic, count?)` | Explore a topic and identify key elements — positions, factors, perspectives |
+| `ground(claim, extract?)` | Connect a claim to concrete evidence, facts, or experience |
+
+### Argument — reason and challenge
+
+| Operation | Description |
+|-----------|-------------|
+| `assert(thesis, based_on?)` | State a position with reasoning |
+| `doubt(target)` | Problematize a claim — find weaknesses, hidden assumptions, edge cases |
+| `contrast(target, with?)` | Find or construct the strongest opposing position or counterexample |
+| `analogy(target, from?)` | Transfer understanding from another domain to reveal hidden structure |
+
+### Synthesis — combine and transform
+
+| Operation | Description |
+|-----------|-------------|
+| `synthesize(sources, method?)` | Combine multiple findings into emergent insight (not just a summary) |
+| `reframe(target, lens?)` | Reformulate a problem in different terms, change the analytical lens |
+
+### Meta — reflect and steer
+
+| Operation | Description |
+|-----------|-------------|
+| `assess(scale?)` | Reflective pause — evaluate the current state of reasoning |
+| `pivot(reason)` | Explicitly change reasoning strategy when the current approach fails |
+| `scope(narrow\|wide)` | Control analytical zoom — from specific mechanisms to systemic connections |
+
+### Output
+
+| Operation | Description |
+|-----------|-------------|
+| `conclude { ... }` | Define the structure and format of the final result |
+
+Plus: variables, `for`/`if`/`loop` control flow, user-defined functions (`define`), `yield`, `import`, `@last`/`@N` references.
+
+## Design Principles
+
+- **Thinking, not computing** — operations model cognitive acts, not data transforms
+- **Agent-native** — designed to be interpreted by LLMs in thinking loops
+- **Composable** — scripts combine operations into structured reasoning paths
+- **Observable** — each step produces traceable output
+
+Built within the Black Zobr collective as infrastructure for co-thinking.
